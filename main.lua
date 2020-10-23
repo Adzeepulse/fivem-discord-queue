@@ -4,6 +4,8 @@
 Queue         = {}
 Queue.Current = {}
 
+local FormattedToken = "Bot "..Config.DiscordToken
+
 Queue.GetDiscordIdentifier = function(source)
   local identifiers = GetPlayerIdentifiers(source)
   for i=1,5 do
@@ -26,7 +28,7 @@ Queue.GetDiscordMember = function(identifier)
       ret = false
     end
     res = true
-  end,'GET','',{['Content-Type'] = 'application/json', ['Authorization'] = Config.Tokens.Bot})
+  end,'GET','',{['Content-Type'] = 'application/json', ['Authorization'] = FormattedToken})
   while not res do Wait(0); end
   return ret
 end
