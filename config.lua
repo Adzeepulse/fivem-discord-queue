@@ -5,10 +5,11 @@ Config = {
 
   ShowStaffQueue    = false, -- Display count of staff members in queue ahead of you?
   ShowPriorityQueue = false, -- Display count of priority members in queue ahead of you?
+  
+  DiscordToken = "CHANGE_ME", -- Bot token.  (From discord developer portal)
 
   Tokens = {
     Discord       = 'CHANGE_ME', -- Discord id. (On discord, enable developer mode in settings, right click your discord, copy id)
-    Bot           = 'CHANGE_ME', -- Bot token.  (From discord developer portal) (NOTE: Must be "Bot XYZ.123", inclusive of "Bot ")
 
     WhitelistRole = 'CHANGE_ME', -- Whitelisted role id.      (On discord, enable developer mode in settings, right click this role in guild/server settings, copy id)
     PriorityRole  = 'CHANGE_ME', -- Priority/donator role id. (On discord, enable developer mode in settings, right click this role in guild/server settings, copy id)
